@@ -1,8 +1,8 @@
 
 var config = {
     wx:{
-        token: 'beimenwenhua',
-        appid: 'yangguangxgdryly',
+        token: 'yangguangxgdryly',
+        appid: 'wxfbda01c1c508e61c',
         encodingAESKey: 'lBQ442k53QflzJx8Fxp8I2PpJ4q6xUK64sfDwsQIpC7'
     }
 }
