@@ -36,6 +36,7 @@ app.use(async (ctx, next) => {
 
 
 app.use(wechat(wx_config).middleware(async (message, ctx) => {
+  console.log('???')
   console.log(message)
   if(message.MsgType == "event" && message.Event == "subscribe"){
     let is_repeat =  await UserApi.isRepeatUserName(message.FromUserName);
