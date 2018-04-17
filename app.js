@@ -45,20 +45,21 @@ app.use(wechat(wx_config).middleware(async (message, ctx) => {
     }else{
       return '您已重复关注';
     }
-  }else if(message.Event == "CLICK" && message.EventKey){
-    var ner = '';
-      switch(message.EventKey){
-        case 'V1001_YHHD' :
-          ner = '关注公众号送10枚游戏币'
-        break;
-        default :
-          ner = ''
-        break;
-      }
-      return ner;
-  }else{
-     return '';
-  }
+   }
+  //else if(message.Event == "CLICK" && message.EventKey){
+  //   var ner = '';
+  //     switch(message.EventKey){
+  //       case 'V1001_YHHD' :
+  //         ner = '关注公众号送10枚游戏币'
+  //       break;
+  //       default :
+  //         ner = ''
+  //       break;
+  //     }
+  //     return ner;
+  // }else{
+  //    return '';
+  // }
 }));
 
 
