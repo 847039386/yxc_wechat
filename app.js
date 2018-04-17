@@ -28,6 +28,7 @@ app.use(views(__dirname + '/views', {
 
 app.use(async (ctx, next) => {  
   if (ctx.path === '/wechat') {
+    console.log(ctx)
       await next();  
   } else {  
       ctx.body = `Hello, koa2! Path is: ${ctx.path}`;  
