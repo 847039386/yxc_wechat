@@ -50,7 +50,7 @@ app.use(wechat(wx_config).middleware(async (message, ctx) => {
     var ner = '';
       switch(message.EventKey){
         case 'V1001_YHHD' :
-          ner = "关注公众号送10枚游戏币\n游戏币单价一元一枚\n会员:200元250枚游戏币,500元700枚游戏币\n<a href='https://www.nuomi.com/deal/r00v0f40y.html?s=2be54a86e0e8281482c731999dc37f64'>百度糯米</a>"
+          ner = "首次关注公众号送10枚游戏币\n游戏币单价一元一枚\n会员:200元250枚游戏币,500元700枚游戏币\n<a href='https://www.nuomi.com/deal/r00v0f40y.html?s=2be54a86e0e8281482c731999dc37f64'>百度糯米</a>"
         break;
         default :
           ner = ''
